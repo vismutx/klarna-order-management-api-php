@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * ShippingInfo Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * CaptureObject Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class CaptureObject implements ModelInterface, ArrayAccess
         'captured_amount' => 'int',
         'description' => 'string',
         'reference' => 'string',
-        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]',
-        'shipping_info' => '\Klarna\OrderManagementApiPhp\Model\ShippingInfo[]',
+        'order_lines' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]',
+        'shipping_info' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]',
         'shipping_delay' => 'int'
     ];
 
@@ -362,7 +362,7 @@ class CaptureObject implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -372,7 +372,7 @@ class CaptureObject implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines Order lines for this capture. Maximum 1000 items.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[] $order_lines Order lines for this capture. Maximum 1000 items.
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class CaptureObject implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_info
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\ShippingInfo[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]
      */
     public function getShippingInfo()
     {
@@ -396,7 +396,7 @@ class CaptureObject implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_info
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\ShippingInfo[] $shipping_info Shipping information for this capture. Maximum 500 items.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[] $shipping_info Shipping information for this capture. Maximum 500 items.
      *
      * @return $this
      */

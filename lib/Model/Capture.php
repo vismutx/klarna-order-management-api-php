@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * Capture Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,11 +63,11 @@ class Capture implements ModelInterface, ArrayAccess
         'captured_amount' => 'int',
         'captured_at' => '\DateTime',
         'description' => 'string',
-        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]',
+        'order_lines' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]',
         'refunded_amount' => 'int',
-        'billing_address' => '\Klarna\OrderManagementApiPhp\Model\Address',
-        'shipping_address' => '\Klarna\OrderManagementApiPhp\Model\Address',
-        'shipping_info' => '\Klarna\OrderManagementApiPhp\Model\ShippingInfo[]'
+        'billing_address' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Address',
+        'shipping_address' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Address',
+        'shipping_info' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]'
     ];
 
     /**
@@ -435,7 +435,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -445,7 +445,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines List of order lines for the capture shown to the customer.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[] $order_lines List of order lines for the capture shown to the customer.
      *
      * @return $this
      */
@@ -483,7 +483,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Address
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Address
      */
     public function getBillingAddress()
     {
@@ -493,7 +493,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Address $billing_address Billing address for the capture.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Address $billing_address Billing address for the capture.
      *
      * @return $this
      */
@@ -507,7 +507,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Address
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Address
      */
     public function getShippingAddress()
     {
@@ -517,7 +517,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Address $shipping_address Shipping address for the capture
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Address $shipping_address Shipping address for the capture
      *
      * @return $this
      */
@@ -531,7 +531,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_info
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\ShippingInfo[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]
      */
     public function getShippingInfo()
     {
@@ -541,7 +541,7 @@ class Capture implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_info
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\ShippingInfo[] $shipping_info Shipping information for this capture.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[] $shipping_info Shipping information for this capture.
      *
      * @return $this
      */

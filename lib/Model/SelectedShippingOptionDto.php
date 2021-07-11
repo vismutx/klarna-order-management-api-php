@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * SelectedShippingOptionDto Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,10 +66,10 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
         'price' => 'int',
         'tax_amount' => 'int',
         'tax_rate' => 'int',
-        'location' => '\Klarna\OrderManagementApiPhp\Model\Location',
-        'timeslot' => '\Klarna\OrderManagementApiPhp\Model\Timeslot',
-        'carrier_product' => '\Klarna\OrderManagementApiPhp\Model\CarrierProduct',
-        'selected_addons' => '\Klarna\OrderManagementApiPhp\Model\Addon[]',
+        'location' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Location',
+        'timeslot' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Timeslot',
+        'carrier_product' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\CarrierProduct',
+        'selected_addons' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Addon[]',
         'class' => 'string'
     ];
 
@@ -528,7 +528,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Location
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Location
      */
     public function getLocation()
     {
@@ -538,7 +538,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Location $location The location of the selected shipping option
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Location $location The location of the selected shipping option
      *
      * @return $this
      */
@@ -552,7 +552,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets timeslot
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Timeslot
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Timeslot
      */
     public function getTimeslot()
     {
@@ -562,7 +562,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets timeslot
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Timeslot $timeslot The chosen timeslot of the selected shipping option
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Timeslot $timeslot The chosen timeslot of the selected shipping option
      *
      * @return $this
      */
@@ -576,7 +576,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets carrier_product
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\CarrierProduct
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\CarrierProduct
      */
     public function getCarrierProduct()
     {
@@ -586,7 +586,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets carrier_product
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\CarrierProduct $carrier_product The chosen timeslot of the selected shipping option
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\CarrierProduct $carrier_product The chosen timeslot of the selected shipping option
      *
      * @return $this
      */
@@ -600,7 +600,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets selected_addons
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Addon[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Addon[]
      */
     public function getSelectedAddons()
     {
@@ -610,7 +610,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets selected_addons
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Addon[] $selected_addons Array consisting of add-ons selected by the consumer, may be empty
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Addon[] $selected_addons Array consisting of add-ons selected by the consumer, may be empty
      *
      * @return $this
      */

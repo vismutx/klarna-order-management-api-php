@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **merchant_data** | **string** | Data about the order line. Set at creation or update and returned when fetching the order through the API. Maximum 1024 characters. | [optional] 
 **product_url** | **string** | URL to the product that can be used in communications between Klarna and the customer. Maximum 1024 characters. | [optional] 
 **image_url** | **string** | URL to an image that can be embedded in communications between Klarna and the customer. Maximum 1024 characters. | [optional] 
-**product_identifiers** | [**\Klarna\OrderManagementApiPhp\Model\ProductIdentifiers**](ProductIdentifiers.md) | Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality. | [optional] 
+**product_identifiers** | [**\Vismutx\KlarnaOrderManagementApiPhp\Model\ProductIdentifiers**](ProductIdentifiers.md) | Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

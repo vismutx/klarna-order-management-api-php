@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * RefundObject Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class RefundObject implements ModelInterface, ArrayAccess
         'refunded_amount' => 'int',
         'description' => 'string',
         'reference' => 'string',
-        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]'
+        'order_lines' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]'
     ];
 
     /**
@@ -346,7 +346,7 @@ class RefundObject implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -356,7 +356,7 @@ class RefundObject implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines Order lines for the refund shown to the customer. Optional but increases the customer experience. Maximum 1000 order lines.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[] $order_lines Order lines for the refund shown to the customer. Optional but increases the customer experience. Maximum 1000 order lines.
      *
      * @return $this
      */

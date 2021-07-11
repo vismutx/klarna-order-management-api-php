@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * UpdateShippingInfo Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class UpdateShippingInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'shipping_info' => '\Klarna\OrderManagementApiPhp\Model\ShippingInfo[]'
+        'shipping_info' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]'
     ];
 
     /**
@@ -210,7 +210,7 @@ class UpdateShippingInfo implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_info
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\ShippingInfo[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[]
      */
     public function getShippingInfo()
     {
@@ -220,7 +220,7 @@ class UpdateShippingInfo implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_info
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\ShippingInfo[] $shipping_info New shipping info. Maximum: 500 items.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\ShippingInfo[] $shipping_info New shipping info. Maximum: 500 items.
      *
      * @return $this
      */

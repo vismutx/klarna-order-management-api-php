@@ -1,4 +1,4 @@
-# Klarna\OrderManagementApiPhp\CapturesApi
+# Vismutx\KlarnaOrderManagementApiPhp\CapturesApi
 
 All URIs are relative to *https://api.klarna.com*
 
@@ -25,14 +25,14 @@ Add shipping info to a capture
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
 $capture_id = "capture_id_example"; // string | Capture id
-$body = new \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo(); // \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo | 
+$body = new \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateShippingInfo(); // \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateShippingInfo | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
  **capture_id** | **string**| Capture id |
- **body** | [**\Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo**](../Model/UpdateShippingInfo.md)|  | [optional]
+ **body** | [**\Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateShippingInfo**](../Model/UpdateShippingInfo.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type
@@ -79,13 +79,13 @@ Create capture
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
-$body = new \Klarna\OrderManagementApiPhp\Model\CaptureObject(); // \Klarna\OrderManagementApiPhp\Model\CaptureObject | Capture request data
+$body = new \Vismutx\KlarnaOrderManagementApiPhp\Model\CaptureObject(); // \Vismutx\KlarnaOrderManagementApiPhp\Model\CaptureObject | Capture request data
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -101,7 +101,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
- **body** | [**\Klarna\OrderManagementApiPhp\Model\CaptureObject**](../Model/CaptureObject.md)| Capture request data |
+ **body** | [**\Vismutx\KlarnaOrderManagementApiPhp\Model\CaptureObject**](../Model/CaptureObject.md)| Capture request data |
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type
@@ -131,14 +131,14 @@ Extend the customer's payment due date
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
 $capture_id = "capture_id_example"; // string | Capture id
-$body = new \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest(); // \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest | 
+$body = new \Vismutx\KlarnaOrderManagementApiPhp\Model\ExtendDueDateRequest(); // \Vismutx\KlarnaOrderManagementApiPhp\Model\ExtendDueDateRequest | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
  **capture_id** | **string**| Capture id |
- **body** | [**\Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest**](../Model/ExtendDueDateRequest.md)|  | [optional]
+ **body** | [**\Vismutx\KlarnaOrderManagementApiPhp\Model\ExtendDueDateRequest**](../Model/ExtendDueDateRequest.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type
@@ -174,7 +174,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCapture**
-> \Klarna\OrderManagementApiPhp\Model\Capture getCapture($order_id, $capture_id)
+> \Vismutx\KlarnaOrderManagementApiPhp\Model\Capture getCapture($order_id, $capture_id)
 
 Get capture
 
@@ -185,7 +185,7 @@ Get capture
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Klarna\OrderManagementApiPhp\Model\Capture**](../Model/Capture.md)
+[**\Vismutx\KlarnaOrderManagementApiPhp\Model\Capture**](../Model/Capture.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCaptures**
-> \Klarna\OrderManagementApiPhp\Model\Capture[] getCaptures($order_id)
+> \Vismutx\KlarnaOrderManagementApiPhp\Model\Capture[] getCaptures($order_id)
 
 Get all captures for one order
 
@@ -236,7 +236,7 @@ Get all captures for one order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Klarna\OrderManagementApiPhp\Model\Capture[]**](../Model/Capture.md)
+[**\Vismutx\KlarnaOrderManagementApiPhp\Model\Capture[]**](../Model/Capture.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOptionsForExtendDueDate**
-> \Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions getOptionsForExtendDueDate($order_id, $capture_id)
+> \Vismutx\KlarnaOrderManagementApiPhp\Model\ExtendDueDateOptions getOptionsForExtendDueDate($order_id, $capture_id)
 
 Get available options for extension of the customer's payment due date
 
@@ -285,7 +285,7 @@ Get merchant fees for extension of due date due date
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions**](../Model/ExtendDueDateOptions.md)
+[**\Vismutx\KlarnaOrderManagementApiPhp\Model\ExtendDueDateOptions**](../Model/ExtendDueDateOptions.md)
 
 ### Authorization
 
@@ -336,7 +336,7 @@ Trigger resend of customer communication
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

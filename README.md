@@ -62,14 +62,14 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
+$apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
 $capture_id = "capture_id_example"; // string | Capture id
-$body = new \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo(); // \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo | 
+$body = new \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateShippingInfo(); // \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateShippingInfo | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * Location Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Location implements ModelInterface, ArrayAccess
         'id' => 'string',
         'name' => 'string',
         'price' => 'int',
-        'address' => '\Klarna\OrderManagementApiPhp\Model\Address'
+        'address' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\Address'
     ];
 
     /**
@@ -306,7 +306,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\Address
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Address
      */
     public function getAddress()
     {
@@ -316,7 +316,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\Address $address The address of the location
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\Address $address The address of the location
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Api;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Klarna\OrderManagementApiPhp\ApiException;
-use Klarna\OrderManagementApiPhp\Configuration;
-use Klarna\OrderManagementApiPhp\HeaderSelector;
-use Klarna\OrderManagementApiPhp\ObjectSerializer;
+use Vismutx\KlarnaOrderManagementApiPhp\ApiException;
+use Vismutx\KlarnaOrderManagementApiPhp\Configuration;
+use Vismutx\KlarnaOrderManagementApiPhp\HeaderSelector;
+use Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * OrdersApi Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -112,7 +112,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -156,7 +156,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -164,7 +164,7 @@ class OrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -352,7 +352,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -369,7 +369,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -413,7 +413,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\CancelNotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\CancelNotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -601,7 +601,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -618,7 +618,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -662,7 +662,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -850,9 +850,9 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_integrator klarna_integrator (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Klarna\OrderManagementApiPhp\Model\Order
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Order
      */
     public function getOrder($order_id, $klarna_integrator = null)
     {
@@ -868,13 +868,13 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_integrator (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Klarna\OrderManagementApiPhp\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Vismutx\KlarnaOrderManagementApiPhp\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($order_id, $klarna_integrator = null)
     {
-        $returnType = '\Klarna\OrderManagementApiPhp\Model\Order';
+        $returnType = '\Vismutx\KlarnaOrderManagementApiPhp\Model\Order';
         $request = $this->getOrderRequest($order_id, $klarna_integrator);
 
         try {
@@ -926,7 +926,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\Order',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -934,7 +934,7 @@ class OrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -978,7 +978,7 @@ class OrdersApi
      */
     public function getOrderAsyncWithHttpInfo($order_id, $klarna_integrator = null)
     {
-        $returnType = '\Klarna\OrderManagementApiPhp\Model\Order';
+        $returnType = '\Vismutx\KlarnaOrderManagementApiPhp\Model\Order';
         $request = $this->getOrderRequest($order_id, $klarna_integrator);
 
         return $this->client
@@ -1136,7 +1136,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1153,7 +1153,7 @@ class OrdersApi
      * @param  string $order_id Order id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1197,7 +1197,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,10 +1383,10 @@ class OrdersApi
      * Set new order amount and order lines
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization $body body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateAuthorization $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1401,10 +1401,10 @@ class OrdersApi
      * Set new order amount and order lines
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1448,7 +1448,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1464,7 +1464,7 @@ class OrdersApi
      * Set new order amount and order lines
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1486,7 +1486,7 @@ class OrdersApi
      * Set new order amount and order lines
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1524,7 +1524,7 @@ class OrdersApi
      * Create request for operation 'updateAuthorization'
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateAuthorization $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1640,10 +1640,10 @@ class OrdersApi
      * Update customer addresses
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateConsumer $body body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateConsumer $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1658,10 +1658,10 @@ class OrdersApi
      * Update customer addresses
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateConsumer $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateConsumer $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1705,7 +1705,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1721,7 +1721,7 @@ class OrdersApi
      * Update customer addresses
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateConsumer $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateConsumer $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1743,7 +1743,7 @@ class OrdersApi
      * Update customer addresses
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateConsumer $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateConsumer $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1781,7 +1781,7 @@ class OrdersApi
      * Create request for operation 'updateConsumerDetails'
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateConsumer $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateConsumer $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1897,10 +1897,10 @@ class OrdersApi
      * Update merchant references
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences $body body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateMerchantReferences $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1915,10 +1915,10 @@ class OrdersApi
      * Update merchant references
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1962,7 +1962,7 @@ class OrdersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1978,7 +1978,7 @@ class OrdersApi
      * Update merchant references
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -2000,7 +2000,7 @@ class OrdersApi
      * Update merchant references
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -2038,7 +2038,7 @@ class OrdersApi
      * Create request for operation 'updateMerchantReferences'
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\UpdateMerchantReferences $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException

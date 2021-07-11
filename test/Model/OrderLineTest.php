@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Klarna\OrderManagementApiPhp;
+namespace Vismutx\KlarnaOrderManagementApiPhp;
 
 /**
  * OrderLineTest Class Doc Comment
  *
  * @category    Class
  * @description OrderLine
- * @package     Klarna\OrderManagementApiPhp
+ * @package     Vismutx\KlarnaOrderManagementApiPhp
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

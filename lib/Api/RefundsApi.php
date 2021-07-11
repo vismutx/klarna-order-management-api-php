@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Api;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Klarna\OrderManagementApiPhp\ApiException;
-use Klarna\OrderManagementApiPhp\Configuration;
-use Klarna\OrderManagementApiPhp\HeaderSelector;
-use Klarna\OrderManagementApiPhp\ObjectSerializer;
+use Vismutx\KlarnaOrderManagementApiPhp\ApiException;
+use Vismutx\KlarnaOrderManagementApiPhp\Configuration;
+use Vismutx\KlarnaOrderManagementApiPhp\HeaderSelector;
+use Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * RefundsApi Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class RefundsApi
      * @param  string $order_id Order id (required)
      * @param  string $refund_id Refund id (required)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Klarna\OrderManagementApiPhp\Model\Refund
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\Refund
      */
     public function get($order_id, $refund_id)
     {
@@ -113,13 +113,13 @@ class RefundsApi
      * @param  string $order_id Order id (required)
      * @param  string $refund_id Refund id (required)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Klarna\OrderManagementApiPhp\Model\Refund, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Vismutx\KlarnaOrderManagementApiPhp\Model\Refund, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWithHttpInfo($order_id, $refund_id)
     {
-        $returnType = '\Klarna\OrderManagementApiPhp\Model\Refund';
+        $returnType = '\Vismutx\KlarnaOrderManagementApiPhp\Model\Refund';
         $request = $this->getRequest($order_id, $refund_id);
 
         try {
@@ -171,7 +171,7 @@ class RefundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\Refund',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\Refund',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -179,7 +179,7 @@ class RefundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotFoundErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotFoundErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class RefundsApi
      */
     public function getAsyncWithHttpInfo($order_id, $refund_id)
     {
-        $returnType = '\Klarna\OrderManagementApiPhp\Model\Refund';
+        $returnType = '\Vismutx\KlarnaOrderManagementApiPhp\Model\Refund';
         $request = $this->getRequest($order_id, $refund_id);
 
         return $this->client
@@ -389,10 +389,10 @@ class RefundsApi
      * Create a refund
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\RefundObject $body body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\RefundObject $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -407,10 +407,10 @@ class RefundsApi
      * Create a refund
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\RefundObject $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\RefundObject $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
+     * @throws \Vismutx\KlarnaOrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -454,7 +454,7 @@ class RefundsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\RefundNotAllowedErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\RefundNotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -462,7 +462,7 @@ class RefundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Klarna\OrderManagementApiPhp\Model\NotFoundErrorMessage',
+                        '\Vismutx\KlarnaOrderManagementApiPhp\Model\NotFoundErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -478,7 +478,7 @@ class RefundsApi
      * Create a refund
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\RefundObject $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\RefundObject $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -500,7 +500,7 @@ class RefundsApi
      * Create a refund
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\RefundObject $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\RefundObject $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -538,7 +538,7 @@ class RefundsApi
      * Create request for operation 'refundOrder'
      *
      * @param  string $order_id Order id (required)
-     * @param  \Klarna\OrderManagementApiPhp\Model\RefundObject $body (optional)
+     * @param  \Vismutx\KlarnaOrderManagementApiPhp\Model\RefundObject $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException

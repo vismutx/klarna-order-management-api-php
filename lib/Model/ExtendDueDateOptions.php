@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * ExtendDueDateOptions Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ExtendDueDateOptions implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'currency' => 'string',
-        'options' => '\Klarna\OrderManagementApiPhp\Model\OptionDto[]'
+        'options' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\OptionDto[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class ExtendDueDateOptions implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\OptionDto[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\OptionDto[]
      */
     public function getOptions()
     {
@@ -247,7 +247,7 @@ class ExtendDueDateOptions implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\OptionDto[] $options The available options and corresponding fees for extending the due date
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\OptionDto[] $options The available options and corresponding fees for extending the due date
      *
      * @return $this
      */

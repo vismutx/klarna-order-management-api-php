@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * UpdateAuthorization Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class UpdateAuthorization implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'order_amount' => 'int',
         'description' => 'string',
-        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]'
+        'order_lines' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]'
     ];
 
     /**
@@ -301,7 +301,7 @@ class UpdateAuthorization implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -311,7 +311,7 @@ class UpdateAuthorization implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines New set of order lines for the order.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\OrderLine[] $order_lines New set of order lines for the order.
      *
      * @return $this
      */

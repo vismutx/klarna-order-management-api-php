@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\OrderManagementApiPhp\Model;
+namespace Vismutx\KlarnaOrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Klarna\OrderManagementApiPhp\ObjectSerializer;
+use \Vismutx\KlarnaOrderManagementApiPhp\ObjectSerializer;
 
 /**
  * OrderLine Class Doc Comment
  *
  * @category Class
- * @package  Klarna\OrderManagementApiPhp
+ * @package  Vismutx\KlarnaOrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,7 +70,7 @@ class OrderLine implements ModelInterface, ArrayAccess
         'merchant_data' => 'string',
         'product_url' => 'string',
         'image_url' => 'string',
-        'product_identifiers' => '\Klarna\OrderManagementApiPhp\Model\ProductIdentifiers'
+        'product_identifiers' => '\Vismutx\KlarnaOrderManagementApiPhp\Model\ProductIdentifiers'
     ];
 
     /**
@@ -769,7 +769,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets product_identifiers
      *
-     * @return \Klarna\OrderManagementApiPhp\Model\ProductIdentifiers
+     * @return \Vismutx\KlarnaOrderManagementApiPhp\Model\ProductIdentifiers
      */
     public function getProductIdentifiers()
     {
@@ -779,7 +779,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets product_identifiers
      *
-     * @param \Klarna\OrderManagementApiPhp\Model\ProductIdentifiers $product_identifiers Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality.
+     * @param \Vismutx\KlarnaOrderManagementApiPhp\Model\ProductIdentifiers $product_identifiers Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality.
      *
      * @return $this
      */
