@@ -1,4 +1,4 @@
-# Swagger\Client\OrdersApi
+# Klarna\OrderManagementApiPhp\OrdersApi
 
 All URIs are relative to *https://api.klarna.com*
 
@@ -26,7 +26,7 @@ Acknowledge order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -76,7 +76,7 @@ Cancel order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -126,7 +126,7 @@ Extend authorization time
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,7 +165,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrder**
-> \Swagger\Client\Model\Order getOrder($order_id, $klarna_integrator)
+> \Klarna\OrderManagementApiPhp\Model\Order getOrder($order_id, $klarna_integrator)
 
 Get order
 
@@ -176,7 +176,7 @@ An order that has the given order id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\Klarna\OrderManagementApiPhp\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -227,7 +227,7 @@ Release remaining authorization
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -277,13 +277,13 @@ Set new order amount and order lines
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
-$body = new \Swagger\Client\Model\UpdateAuthorization(); // \Swagger\Client\Model\UpdateAuthorization | 
+$body = new \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization(); // \Klarna\OrderManagementApiPhp\Model\UpdateAuthorization | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -299,7 +299,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
- **body** | [**\Swagger\Client\Model\UpdateAuthorization**](../Model/UpdateAuthorization.md)|  | [optional]
+ **body** | [**\Klarna\OrderManagementApiPhp\Model\UpdateAuthorization**](../Model/UpdateAuthorization.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type
@@ -329,13 +329,13 @@ Update customer addresses
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
-$body = new \Swagger\Client\Model\UpdateConsumer(); // \Swagger\Client\Model\UpdateConsumer | 
+$body = new \Klarna\OrderManagementApiPhp\Model\UpdateConsumer(); // \Klarna\OrderManagementApiPhp\Model\UpdateConsumer | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -351,7 +351,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
- **body** | [**\Swagger\Client\Model\UpdateConsumer**](../Model/UpdateConsumer.md)|  | [optional]
+ **body** | [**\Klarna\OrderManagementApiPhp\Model\UpdateConsumer**](../Model/UpdateConsumer.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type
@@ -381,13 +381,13 @@ Update merchant references
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
-$body = new \Swagger\Client\Model\UpdateMerchantReferences(); // \Swagger\Client\Model\UpdateMerchantReferences | 
+$body = new \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences(); // \Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -403,7 +403,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
- **body** | [**\Swagger\Client\Model\UpdateMerchantReferences**](../Model/UpdateMerchantReferences.md)|  | [optional]
+ **body** | [**\Klarna\OrderManagementApiPhp\Model\UpdateMerchantReferences**](../Model/UpdateMerchantReferences.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type

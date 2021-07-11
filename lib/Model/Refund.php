@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * Refund Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class Refund implements ModelInterface, ArrayAccess
         'refunded_amount' => 'int',
         'refunded_at' => '\DateTime',
         'description' => 'string',
-        'order_lines' => '\Swagger\Client\Model\OrderLine[]',
+        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]',
         'credit_invoice' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class Refund implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Swagger\Client\Model\OrderLine[]
+     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -343,7 +343,7 @@ class Refund implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Swagger\Client\Model\OrderLine[] $order_lines Order lines for the refund shown to the customer. Optional but increases the customer experience. Maximum 1000 order lines.
+     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines Order lines for the refund shown to the customer. Optional but increases the customer experience. Maximum 1000 order lines.
      *
      * @return $this
      */

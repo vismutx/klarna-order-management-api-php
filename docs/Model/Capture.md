@@ -9,11 +9,11 @@ Name | Type | Description | Notes
 **captured_amount** | **int** | The captured amount in minor units. | [optional] 
 **captured_at** | [**\DateTime**](\DateTime.md) | The time of the capture. Specified in ISO 8601. | [optional] 
 **description** | **string** | Description of the capture shown to the customer. | [optional] 
-**order_lines** | [**\Swagger\Client\Model\OrderLine[]**](OrderLine.md) | List of order lines for the capture shown to the customer. | [optional] 
+**order_lines** | [**\Klarna\OrderManagementApiPhp\Model\OrderLine[]**](OrderLine.md) | List of order lines for the capture shown to the customer. | [optional] 
 **refunded_amount** | **int** | Refunded amount for this capture in minor units. | [optional] 
-**billing_address** | [**\Swagger\Client\Model\Address**](Address.md) | Billing address for the capture. | [optional] 
-**shipping_address** | [**\Swagger\Client\Model\Address**](Address.md) | Shipping address for the capture | [optional] 
-**shipping_info** | [**\Swagger\Client\Model\ShippingInfo[]**](ShippingInfo.md) | Shipping information for this capture. | [optional] 
+**billing_address** | [**\Klarna\OrderManagementApiPhp\Model\Address**](Address.md) | Billing address for the capture. | [optional] 
+**shipping_address** | [**\Klarna\OrderManagementApiPhp\Model\Address**](Address.md) | Shipping address for the capture | [optional] 
+**shipping_info** | [**\Klarna\OrderManagementApiPhp\Model\ShippingInfo[]**](ShippingInfo.md) | Shipping information for this capture. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

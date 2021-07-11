@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * OrderLine Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,7 +70,7 @@ class OrderLine implements ModelInterface, ArrayAccess
         'merchant_data' => 'string',
         'product_url' => 'string',
         'image_url' => 'string',
-        'product_identifiers' => '\Swagger\Client\Model\ProductIdentifiers'
+        'product_identifiers' => '\Klarna\OrderManagementApiPhp\Model\ProductIdentifiers'
     ];
 
     /**
@@ -769,7 +769,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets product_identifiers
      *
-     * @return \Swagger\Client\Model\ProductIdentifiers
+     * @return \Klarna\OrderManagementApiPhp\Model\ProductIdentifiers
      */
     public function getProductIdentifiers()
     {
@@ -779,7 +779,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets product_identifiers
      *
-     * @param \Swagger\Client\Model\ProductIdentifiers $product_identifiers Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality.
+     * @param \Klarna\OrderManagementApiPhp\Model\ProductIdentifiers $product_identifiers Identifiers to better describe the product for improved risk assessment, support, presentation to consumers and promotional functionality.
      *
      * @return $this
      */

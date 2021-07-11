@@ -1,4 +1,4 @@
-# Swagger\Client\RefundsApi
+# Klarna\OrderManagementApiPhp\RefundsApi
 
 All URIs are relative to *https://api.klarna.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get**
-> \Swagger\Client\Model\Refund get($order_id, $refund_id)
+> \Klarna\OrderManagementApiPhp\Model\Refund get($order_id, $refund_id)
 
 Get refund
 
@@ -20,7 +20,7 @@ Get refund
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RefundsApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\RefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Refund**](../Model/Refund.md)
+[**\Klarna\OrderManagementApiPhp\Model\Refund**](../Model/Refund.md)
 
 ### Authorization
 
@@ -71,13 +71,13 @@ Create a refund
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\RefundsApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\RefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
-$body = new \Swagger\Client\Model\RefundObject(); // \Swagger\Client\Model\RefundObject | 
+$body = new \Klarna\OrderManagementApiPhp\Model\RefundObject(); // \Klarna\OrderManagementApiPhp\Model\RefundObject | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
@@ -93,7 +93,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| Order id |
- **body** | [**\Swagger\Client\Model\RefundObject**](../Model/RefundObject.md)|  | [optional]
+ **body** | [**\Klarna\OrderManagementApiPhp\Model\RefundObject**](../Model/RefundObject.md)|  | [optional]
  **klarna_idempotency_key** | **string**| This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. | [optional]
 
 ### Return type

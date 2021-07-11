@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * UpdateConsumer Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class UpdateConsumer implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'shipping_address' => '\Swagger\Client\Model\Address',
-        'billing_address' => '\Swagger\Client\Model\Address'
+        'shipping_address' => '\Klarna\OrderManagementApiPhp\Model\Address',
+        'billing_address' => '\Klarna\OrderManagementApiPhp\Model\Address'
     ];
 
     /**
@@ -213,7 +213,7 @@ class UpdateConsumer implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Klarna\OrderManagementApiPhp\Model\Address
      */
     public function getShippingAddress()
     {
@@ -223,7 +223,7 @@ class UpdateConsumer implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Swagger\Client\Model\Address $shipping_address Customer shipping address.
+     * @param \Klarna\OrderManagementApiPhp\Model\Address $shipping_address Customer shipping address.
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class UpdateConsumer implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Klarna\OrderManagementApiPhp\Model\Address
      */
     public function getBillingAddress()
     {
@@ -247,7 +247,7 @@ class UpdateConsumer implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Swagger\Client\Model\Address $billing_address Customer billing address.
+     * @param \Klarna\OrderManagementApiPhp\Model\Address $billing_address Customer billing address.
      *
      * @return $this
      */

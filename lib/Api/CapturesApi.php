@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Klarna\OrderManagementApiPhp\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Klarna\OrderManagementApiPhp\ApiException;
+use Klarna\OrderManagementApiPhp\Configuration;
+use Klarna\OrderManagementApiPhp\HeaderSelector;
+use Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * CapturesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,10 +94,10 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\UpdateShippingInfo $body body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -113,10 +113,10 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\UpdateShippingInfo $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -160,7 +160,7 @@ class CapturesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotAllowedErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -168,7 +168,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoSuchOrderErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\UpdateShippingInfo $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -208,7 +208,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\UpdateShippingInfo $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -247,7 +247,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\UpdateShippingInfo $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -377,10 +377,10 @@ class CapturesApi
      * Create capture
      *
      * @param  string $order_id Order id (required)
-     * @param  \Swagger\Client\Model\CaptureObject $body Capture request data (required)
+     * @param  \Klarna\OrderManagementApiPhp\Model\CaptureObject $body Capture request data (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -395,10 +395,10 @@ class CapturesApi
      * Create capture
      *
      * @param  string $order_id Order id (required)
-     * @param  \Swagger\Client\Model\CaptureObject $body Capture request data (required)
+     * @param  \Klarna\OrderManagementApiPhp\Model\CaptureObject $body Capture request data (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -442,7 +442,7 @@ class CapturesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CaptureNotAllowedErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\CaptureNotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -450,7 +450,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoSuchOrderErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -466,7 +466,7 @@ class CapturesApi
      * Create capture
      *
      * @param  string $order_id Order id (required)
-     * @param  \Swagger\Client\Model\CaptureObject $body Capture request data (required)
+     * @param  \Klarna\OrderManagementApiPhp\Model\CaptureObject $body Capture request data (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -488,7 +488,7 @@ class CapturesApi
      * Create capture
      *
      * @param  string $order_id Order id (required)
-     * @param  \Swagger\Client\Model\CaptureObject $body Capture request data (required)
+     * @param  \Klarna\OrderManagementApiPhp\Model\CaptureObject $body Capture request data (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -526,7 +526,7 @@ class CapturesApi
      * Create request for operation 'captureOrder'
      *
      * @param  string $order_id Order id (required)
-     * @param  \Swagger\Client\Model\CaptureObject $body Capture request data (required)
+     * @param  \Klarna\OrderManagementApiPhp\Model\CaptureObject $body Capture request data (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -649,10 +649,10 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\ExtendDueDateRequest $body body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest $body body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -668,10 +668,10 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\ExtendDueDateRequest $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -715,7 +715,7 @@ class CapturesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ErrorMessageDto',
+                        '\Klarna\OrderManagementApiPhp\Model\ErrorMessageDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ErrorMessageDto',
+                        '\Klarna\OrderManagementApiPhp\Model\ErrorMessageDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -740,7 +740,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\ExtendDueDateRequest $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -763,7 +763,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\ExtendDueDateRequest $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -802,7 +802,7 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
-     * @param  \Swagger\Client\Model\ExtendDueDateRequest $body (optional)
+     * @param  \Klarna\OrderManagementApiPhp\Model\ExtendDueDateRequest $body (optional)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
      * @throws \InvalidArgumentException
@@ -934,9 +934,9 @@ class CapturesApi
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Capture
+     * @return \Klarna\OrderManagementApiPhp\Model\Capture
      */
     public function getCapture($order_id, $capture_id)
     {
@@ -952,13 +952,13 @@ class CapturesApi
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Capture, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Klarna\OrderManagementApiPhp\Model\Capture, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCaptureWithHttpInfo($order_id, $capture_id)
     {
-        $returnType = '\Swagger\Client\Model\Capture';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\Capture';
         $request = $this->getCaptureRequest($order_id, $capture_id);
 
         try {
@@ -1010,7 +1010,7 @@ class CapturesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Capture',
+                        '\Klarna\OrderManagementApiPhp\Model\Capture',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1018,7 +1018,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoSuchOrderErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1062,7 +1062,7 @@ class CapturesApi
      */
     public function getCaptureAsyncWithHttpInfo($order_id, $capture_id)
     {
-        $returnType = '\Swagger\Client\Model\Capture';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\Capture';
         $request = $this->getCaptureRequest($order_id, $capture_id);
 
         return $this->client
@@ -1229,9 +1229,9 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Capture[]
+     * @return \Klarna\OrderManagementApiPhp\Model\Capture[]
      */
     public function getCaptures($order_id)
     {
@@ -1246,13 +1246,13 @@ class CapturesApi
      *
      * @param  string $order_id Order id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Capture[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Klarna\OrderManagementApiPhp\Model\Capture[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getCapturesWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\Capture[]';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\Capture[]';
         $request = $this->getCapturesRequest($order_id);
 
         try {
@@ -1304,7 +1304,7 @@ class CapturesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Capture[]',
+                        '\Klarna\OrderManagementApiPhp\Model\Capture[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1312,7 +1312,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoSuchOrderErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NoSuchOrderErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1354,7 +1354,7 @@ class CapturesApi
      */
     public function getCapturesAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\Capture[]';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\Capture[]';
         $request = $this->getCapturesRequest($order_id);
 
         return $this->client
@@ -1507,9 +1507,9 @@ class CapturesApi
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ExtendDueDateOptions
+     * @return \Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions
      */
     public function getOptionsForExtendDueDate($order_id, $capture_id)
     {
@@ -1525,13 +1525,13 @@ class CapturesApi
      * @param  string $order_id Order id (required)
      * @param  string $capture_id Capture id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ExtendDueDateOptions, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOptionsForExtendDueDateWithHttpInfo($order_id, $capture_id)
     {
-        $returnType = '\Swagger\Client\Model\ExtendDueDateOptions';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions';
         $request = $this->getOptionsForExtendDueDateRequest($order_id, $capture_id);
 
         try {
@@ -1583,7 +1583,7 @@ class CapturesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ExtendDueDateOptions',
+                        '\Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1591,7 +1591,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ErrorMessageDto',
+                        '\Klarna\OrderManagementApiPhp\Model\ErrorMessageDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1635,7 +1635,7 @@ class CapturesApi
      */
     public function getOptionsForExtendDueDateAsyncWithHttpInfo($order_id, $capture_id)
     {
-        $returnType = '\Swagger\Client\Model\ExtendDueDateOptions';
+        $returnType = '\Klarna\OrderManagementApiPhp\Model\ExtendDueDateOptions';
         $request = $this->getOptionsForExtendDueDateRequest($order_id, $capture_id);
 
         return $this->client
@@ -1804,7 +1804,7 @@ class CapturesApi
      * @param  string $capture_id Capture id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1822,7 +1822,7 @@ class CapturesApi
      * @param  string $capture_id Capture id (required)
      * @param  string $klarna_idempotency_key This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Klarna\OrderManagementApiPhp\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1866,7 +1866,7 @@ class CapturesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotAllowedErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NotAllowedErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1874,7 +1874,7 @@ class CapturesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoSuchCaptureErrorMessage',
+                        '\Klarna\OrderManagementApiPhp\Model\NoSuchCaptureErrorMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

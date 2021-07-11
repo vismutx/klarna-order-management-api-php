@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * Location Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Location implements ModelInterface, ArrayAccess
         'id' => 'string',
         'name' => 'string',
         'price' => 'int',
-        'address' => '\Swagger\Client\Model\Address'
+        'address' => '\Klarna\OrderManagementApiPhp\Model\Address'
     ];
 
     /**
@@ -306,7 +306,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Klarna\OrderManagementApiPhp\Model\Address
      */
     public function getAddress()
     {
@@ -316,7 +316,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address The address of the location
+     * @param \Klarna\OrderManagementApiPhp\Model\Address $address The address of the location
      *
      * @return $this
      */

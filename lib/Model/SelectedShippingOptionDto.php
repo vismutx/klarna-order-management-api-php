@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * SelectedShippingOptionDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,10 +66,10 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
         'price' => 'int',
         'tax_amount' => 'int',
         'tax_rate' => 'int',
-        'location' => '\Swagger\Client\Model\Location',
-        'timeslot' => '\Swagger\Client\Model\Timeslot',
-        'carrier_product' => '\Swagger\Client\Model\CarrierProduct',
-        'selected_addons' => '\Swagger\Client\Model\Addon[]',
+        'location' => '\Klarna\OrderManagementApiPhp\Model\Location',
+        'timeslot' => '\Klarna\OrderManagementApiPhp\Model\Timeslot',
+        'carrier_product' => '\Klarna\OrderManagementApiPhp\Model\CarrierProduct',
+        'selected_addons' => '\Klarna\OrderManagementApiPhp\Model\Addon[]',
         'class' => 'string'
     ];
 
@@ -528,7 +528,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \Klarna\OrderManagementApiPhp\Model\Location
      */
     public function getLocation()
     {
@@ -538,7 +538,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location The location of the selected shipping option
+     * @param \Klarna\OrderManagementApiPhp\Model\Location $location The location of the selected shipping option
      *
      * @return $this
      */
@@ -552,7 +552,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets timeslot
      *
-     * @return \Swagger\Client\Model\Timeslot
+     * @return \Klarna\OrderManagementApiPhp\Model\Timeslot
      */
     public function getTimeslot()
     {
@@ -562,7 +562,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets timeslot
      *
-     * @param \Swagger\Client\Model\Timeslot $timeslot The chosen timeslot of the selected shipping option
+     * @param \Klarna\OrderManagementApiPhp\Model\Timeslot $timeslot The chosen timeslot of the selected shipping option
      *
      * @return $this
      */
@@ -576,7 +576,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets carrier_product
      *
-     * @return \Swagger\Client\Model\CarrierProduct
+     * @return \Klarna\OrderManagementApiPhp\Model\CarrierProduct
      */
     public function getCarrierProduct()
     {
@@ -586,7 +586,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets carrier_product
      *
-     * @param \Swagger\Client\Model\CarrierProduct $carrier_product The chosen timeslot of the selected shipping option
+     * @param \Klarna\OrderManagementApiPhp\Model\CarrierProduct $carrier_product The chosen timeslot of the selected shipping option
      *
      * @return $this
      */
@@ -600,7 +600,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Gets selected_addons
      *
-     * @return \Swagger\Client\Model\Addon[]
+     * @return \Klarna\OrderManagementApiPhp\Model\Addon[]
      */
     public function getSelectedAddons()
     {
@@ -610,7 +610,7 @@ class SelectedShippingOptionDto implements ModelInterface, ArrayAccess
     /**
      * Sets selected_addons
      *
-     * @param \Swagger\Client\Model\Addon[] $selected_addons Array consisting of add-ons selected by the consumer, may be empty
+     * @param \Klarna\OrderManagementApiPhp\Model\Addon[] $selected_addons Array consisting of add-ons selected by the consumer, may be empty
      *
      * @return $this
      */

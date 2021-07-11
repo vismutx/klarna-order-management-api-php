@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Klarna\OrderManagementApiPhp\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Klarna\OrderManagementApiPhp\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Klarna\OrderManagementApiPhp
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,21 +67,21 @@ class Order implements ModelInterface, ArrayAccess
         'remaining_authorized_amount' => 'int',
         'purchase_currency' => 'string',
         'locale' => 'string',
-        'order_lines' => '\Swagger\Client\Model\OrderLine[]',
+        'order_lines' => '\Klarna\OrderManagementApiPhp\Model\OrderLine[]',
         'merchant_reference1' => 'string',
         'merchant_reference2' => 'string',
         'klarna_reference' => 'string',
-        'customer' => '\Swagger\Client\Model\Customer',
-        'billing_address' => '\Swagger\Client\Model\Address',
-        'shipping_address' => '\Swagger\Client\Model\Address',
+        'customer' => '\Klarna\OrderManagementApiPhp\Model\Customer',
+        'billing_address' => '\Klarna\OrderManagementApiPhp\Model\Address',
+        'shipping_address' => '\Klarna\OrderManagementApiPhp\Model\Address',
         'created_at' => '\DateTime',
         'purchase_country' => 'string',
         'expires_at' => '\DateTime',
-        'captures' => '\Swagger\Client\Model\Capture[]',
-        'refunds' => '\Swagger\Client\Model\Refund[]',
+        'captures' => '\Klarna\OrderManagementApiPhp\Model\Capture[]',
+        'refunds' => '\Klarna\OrderManagementApiPhp\Model\Refund[]',
         'merchant_data' => 'string',
-        'initial_payment_method' => '\Swagger\Client\Model\InitialPaymentMethodDto',
-        'selected_shipping_option' => '\Swagger\Client\Model\SelectedShippingOptionDto'
+        'initial_payment_method' => '\Klarna\OrderManagementApiPhp\Model\InitialPaymentMethodDto',
+        'selected_shipping_option' => '\Klarna\OrderManagementApiPhp\Model\SelectedShippingOptionDto'
     ];
 
     /**
@@ -631,7 +631,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Swagger\Client\Model\OrderLine[]
+     * @return \Klarna\OrderManagementApiPhp\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -641,7 +641,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Swagger\Client\Model\OrderLine[] $order_lines An array of order_line objects. Each line represents one item in the cart.
+     * @param \Klarna\OrderManagementApiPhp\Model\OrderLine[] $order_lines An array of order_line objects. Each line represents one item in the cart.
      *
      * @return $this
      */
@@ -727,7 +727,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Swagger\Client\Model\Customer
+     * @return \Klarna\OrderManagementApiPhp\Model\Customer
      */
     public function getCustomer()
     {
@@ -737,7 +737,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Swagger\Client\Model\Customer $customer Information about the customer placing the order.
+     * @param \Klarna\OrderManagementApiPhp\Model\Customer $customer Information about the customer placing the order.
      *
      * @return $this
      */
@@ -751,7 +751,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Klarna\OrderManagementApiPhp\Model\Address
      */
     public function getBillingAddress()
     {
@@ -761,7 +761,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Swagger\Client\Model\Address $billing_address Customer billing address.
+     * @param \Klarna\OrderManagementApiPhp\Model\Address $billing_address Customer billing address.
      *
      * @return $this
      */
@@ -775,7 +775,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Klarna\OrderManagementApiPhp\Model\Address
      */
     public function getShippingAddress()
     {
@@ -785,7 +785,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Swagger\Client\Model\Address $shipping_address Customer shipping address.
+     * @param \Klarna\OrderManagementApiPhp\Model\Address $shipping_address Customer shipping address.
      *
      * @return $this
      */
@@ -871,7 +871,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets captures
      *
-     * @return \Swagger\Client\Model\Capture[]
+     * @return \Klarna\OrderManagementApiPhp\Model\Capture[]
      */
     public function getCaptures()
     {
@@ -881,7 +881,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets captures
      *
-     * @param \Swagger\Client\Model\Capture[] $captures List of captures for this order.
+     * @param \Klarna\OrderManagementApiPhp\Model\Capture[] $captures List of captures for this order.
      *
      * @return $this
      */
@@ -895,7 +895,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets refunds
      *
-     * @return \Swagger\Client\Model\Refund[]
+     * @return \Klarna\OrderManagementApiPhp\Model\Refund[]
      */
     public function getRefunds()
     {
@@ -905,7 +905,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets refunds
      *
-     * @param \Swagger\Client\Model\Refund[] $refunds List of refunds for this order.
+     * @param \Klarna\OrderManagementApiPhp\Model\Refund[] $refunds List of refunds for this order.
      *
      * @return $this
      */
@@ -943,7 +943,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets initial_payment_method
      *
-     * @return \Swagger\Client\Model\InitialPaymentMethodDto
+     * @return \Klarna\OrderManagementApiPhp\Model\InitialPaymentMethodDto
      */
     public function getInitialPaymentMethod()
     {
@@ -953,7 +953,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets initial_payment_method
      *
-     * @param \Swagger\Client\Model\InitialPaymentMethodDto $initial_payment_method Initial payment method for this order
+     * @param \Klarna\OrderManagementApiPhp\Model\InitialPaymentMethodDto $initial_payment_method Initial payment method for this order
      *
      * @return $this
      */
@@ -967,7 +967,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets selected_shipping_option
      *
-     * @return \Swagger\Client\Model\SelectedShippingOptionDto
+     * @return \Klarna\OrderManagementApiPhp\Model\SelectedShippingOptionDto
      */
     public function getSelectedShippingOption()
     {
@@ -977,7 +977,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets selected_shipping_option
      *
-     * @param \Swagger\Client\Model\SelectedShippingOptionDto $selected_shipping_option The shipping option selected by the user.
+     * @param \Klarna\OrderManagementApiPhp\Model\SelectedShippingOptionDto $selected_shipping_option The shipping option selected by the user.
      *
      * @return $this
      */

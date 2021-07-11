@@ -18,25 +18,31 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 ```
 {
   "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com//.git"
+    "type": "package",
+    "package": {
+        "name": "vismutx/klarna-order_management_api-php",
+        "version": "1.0",
+        "source": {
+            "url": "https://github.com/vismutx/klarna-order_management_api-php",
+            "type": "git",
+            "reference": "1.0"
+        },
+        "autoload": {
+            "classmap": [""]
+        }
     }
-  ],
-  "require": {
-    "/": "*@dev"
-  }
+  ]
 }
 ```
 
-Then run `composer install`
+Then run `composer require vismutx/klarna-order_management_api-php`
 
 ### Manual Installation
 
 Download the files and include `autoload.php`:
 
 ```php
-    require_once('/path/to/SwaggerClient-php/vendor/autoload.php');
+    require_once('/path/to/vendor/autoload.php');
 ```
 
 ## Tests
@@ -56,14 +62,14 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CapturesApi(
+$apiInstance = new Klarna\OrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | Order id
 $capture_id = "capture_id_example"; // string | Capture id
-$body = new \Swagger\Client\Model\UpdateShippingInfo(); // \Swagger\Client\Model\UpdateShippingInfo | 
+$body = new \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo(); // \Klarna\OrderManagementApiPhp\Model\UpdateShippingInfo | 
 $klarna_idempotency_key = "klarna_idempotency_key_example"; // string | This header will guarantee the idempotency of the operation. The key should be unique and is recommended to be a UUID version 4. Retries of requests are safe to be applied in case of errors such as network errors, socket errors and timeouts.
 
 try {
