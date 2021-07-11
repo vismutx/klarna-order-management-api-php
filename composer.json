@@ -8,7 +8,7 @@
         "api"
     ],
     "homepage": "",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "Klarna api",
