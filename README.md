@@ -13,29 +13,8 @@ PHP 5.5 and later
 ## Installation & Usage
 ### Composer
 
-To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
-
-```
-{
-  "repositories": [
-    "type": "package",
-    "package": {
-        "name": "vismutx/klarna-order_management_api-php",
-        "version": "1.0",
-        "source": {
-            "url": "https://github.com/vismutx/klarna-order_management_api-php",
-            "type": "git",
-            "reference": "1.0"
-        },
-        "autoload": {
-            "classmap": [""]
-        }
-    }
-  ]
-}
-```
-
-Then run `composer require vismutx/klarna-order_management_api-php`
+To install the bindings via [Composer](http://getcomposer.org/) run
+`composer require vismutx/klarna-order_management_api-php`
 
 ### Manual Installation
 
@@ -62,10 +41,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: basicAuth
+$config = Vismutx\KlarnaOrderManagementApiPhp\Configuration::getDefaultConfiguration()
+    ->setUsername('YOUR_USERNAME')
+    ->setPassword('YOUR_PASSWORD');
+
 $apiInstance = new Vismutx\KlarnaOrderManagementApiPhp\Api\CapturesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $order_id = "order_id_example"; // string | Order id
 $capture_id = "capture_id_example"; // string | Capture id
