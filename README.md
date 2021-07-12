@@ -14,7 +14,7 @@ PHP 5.5 and later
 ### Composer
 
 To install the bindings via [Composer](http://getcomposer.org/) run
-`composer require vismutx/klarna-order_management_api-php`
+`composer require vismutx/klarna-order-management-api-php`
 
 ### Manual Installation
 
